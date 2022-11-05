@@ -23,23 +23,27 @@ class Base_interface():
             pass
         else:
             header={"jwt_token":self.token}
-        requests.get(url,param,json=data,headers=header)
+        result = requests.get(url,param,json=data,headers=header)
+        return result
     def post_request(self,url,data=None,param=None,header=None):
         if header:
             pass
         else:
             header={"jwt_token":self.token}
-        requests.get(url,param,json=data,headers=header)
+        result = requests.get(url,param,json=data,headers=header)
+        return result
     def put_request(self,url,data=None,param=None,header=None):
         if header:
             pass
         else:
             header={"jwt_token":self.token}
-        requests.get(url,param,json=data,headers=header)
+        result = requests.get(url,param,json=data,headers=header)
+        return result
     def delete_request(self,url,data=None,param=None,header=None):
         if header:
             pass
         else:
             header={"jwt_token":self.token}
-        requests.get(url,param,json=data,headers=header)
+        result = requests.get(url,param,json=data,headers=header)
+        return result
 
